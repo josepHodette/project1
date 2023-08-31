@@ -10,6 +10,7 @@ ul,ol{
 }
 a{
     text-decoration: none;
+    display: block;
 }
 /* header */
 header{
@@ -22,10 +23,12 @@ header .inner{
     margin: 0px auto;
     position: relative;
 }
-header .inner h1{
+header .inner img{
     position: absolute;
     left: 0px;
     bottom: 15px;
+    width: 200px;
+    height: 100px;
 }
 header .inner h1 a{
     font: bold 24px/1 "arial";
@@ -65,6 +68,10 @@ header .inner #gnb li a:hover{
     background: #555;
     color: #fff;
 }
+.submenu{
+    display: none;
+}
+
 figure{
     width: 100%;
     height: calc(100vh - 120px);
