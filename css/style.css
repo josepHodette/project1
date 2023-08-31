@@ -55,8 +55,9 @@ header .inner #gnb{
 }
 header .inner #gnb>li{
     float: left;
+    width: 250px;
 }
-header .inner #gnb li a{
+header .inner #gnb>li a{
     display: block; 
     /* 인라인 요소는 block을 설정하여 크지 조절 가능 */
     font: bold 15px/1 "arial";
@@ -64,7 +65,7 @@ header .inner #gnb li a{
     padding: 20px 40px;
     position: relative;
 }
-header .inner #gnb li a:hover{
+header .inner #gnb>li a:hover{
     background: #555;
     color: #fff;
 }
@@ -79,7 +80,7 @@ header .inner #gnb li a:hover{
     top: 120px;
     right:30px;
     background-color: bisque;
-    width: 600px;
+    width: 100%;
     display: none;
     height: 400px;
     z-index: 2;
@@ -89,10 +90,14 @@ header .inner #gnb li a:hover{
     position: absolute;
 
 }
+.submenu>li>a:hover{
+    background: #fff;
+    color: navy;
+}
 
 figure{
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 400px);
     /* 전체 브라우저 높이에서 120px 만큼 빼줌 */
     background: #000;
     position: relative;
