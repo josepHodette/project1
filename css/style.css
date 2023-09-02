@@ -146,11 +146,13 @@ figure .inner a:hover{
 /* news */
 section{
     width: 100%;
-    padding: 200px 0px;
+    padding: 0px 0px;
+    float: left;
+    background-color: wheat;
 }
 section .inner{
     width: 1180px;
-    margin: 0px auto;
+    margin: 20px 400px;
 }
 section .inner h1{
     font: bold 24px/1 "arial";
@@ -161,6 +163,20 @@ section .inner h1{
 section .inner .wrap{
     width: 100%;
 }
+.wrap ul{
+    width: 50%;
+    margin: 0px 300px
+}
+
+.wrap ul li{
+    text-align: center;
+}
+.wrap ul li a span{
+    float: right;
+}
+.wrap ul li a{
+float: left;
+}
 section .inner .wrap::after{
     content: "";
     display: block;
@@ -169,13 +185,14 @@ section .inner .wrap::after{
 section .inner .wrap article{
     width: 280px;
     float: left;
-    margin-right: 20px;
+    margin-left: 50px;
 }
 section .inner .wrap article:last-child{
     margin-right: 0px;
 }
 section .inner .wrap article h2{
     margin-bottom: 10px;
+    text-align: center;
 }
 section .inner .wrap article h2 a{
     font: bold 16px/1 "arial";
@@ -207,7 +224,7 @@ section .inner .wrap article .pic img:hover{
 /* footer */
 footer{
     width: 100%;
-    background-color: #333;
+    background-color: rgb(26, 26, 62);
     padding: 100px 0px;
     border-top: 1px solid #888;
 }

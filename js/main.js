@@ -7,5 +7,5 @@ $(document).ready(function(){
         $(".submenu").stop().slideUp(500);
         $(".menubg").stop().slideUp(500);
     });
-
+   
 })
