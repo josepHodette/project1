@@ -158,6 +158,7 @@ section .inner h1{
     font: bold 24px/1 "arial";
     color: #555;
     text-align: center;
+    margin-right: 150px;
     margin-bottom: 50px;
 }
 section .inner .wrap{
