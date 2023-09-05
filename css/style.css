@@ -12,8 +12,12 @@ a{
     text-decoration: none;
     display: block;
 }
+body{
+    position: relative;
+}
 /* header */
 header{
+    position: relative;
     width: 100%;
     border-bottom: 1px solid #ddd;
 }
@@ -154,11 +158,12 @@ section{
     width: 100%;
     padding: 0px 0px;
     float: left;
+    position: relative;
     background-color: wheat;
 }
 section .inner{
     width: 1180px;
-    margin: 20px 400px;
+    margin: 10px auto;
 }
 section .inner h1{
     font: bold 24px/1 "arial";
@@ -169,6 +174,12 @@ section .inner h1{
 }
 section .inner .wrap{
     width: 100%;
+}
+.wrap:nth-of-type(1) ul{
+    border: 1px solid #000;
+}
+.wrap:nth-of-type(1) ul li {
+    border-bottom: 1px dashed #333;
 }
 .wrap ul{
     width: 50%;
@@ -218,7 +229,7 @@ section .inner .wrap article .pic{
     overflow: hidden;
 }
 section .inner .wrap article .pic img{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -231,15 +242,21 @@ section .inner .wrap article .pic img:hover{
 /* footer */
 footer{
     width: 100%;
+    bottom: -1130px;
+    position: relative;
+    display: block;
     background-color: rgb(26, 26, 62);
     padding: 100px 0px;
     margin:  20px auto;
     border-top: 1px solid #888;
 }
 footer .inner{
-    
+
+   position: absolute;
+   top: 10px;
 width: 1180px;
-margin: 20px auto;
+left: 8%;
+
 }
 footer .inner .upper{
     width: 100%;
