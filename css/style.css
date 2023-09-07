@@ -229,7 +229,7 @@ section .inner .wrap article .pic{
     overflow: hidden;
 }
 section .inner .wrap article .pic img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     cursor: pointer;
